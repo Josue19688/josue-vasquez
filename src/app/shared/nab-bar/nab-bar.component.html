@@ -1,0 +1,25 @@
+<div class=" mx-auto max-w-xl lg:py-16 lg:px-6 text-white">
+  <nav class="bg-navy px-4 py-2 flex justify-between items-center">
+    <div class="text-lg font-bold hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)] px-5 py-2 rounded-md">Josue Vasquez</div>
+    <div class="hidden md:flex space-x-4">
+      <!-- <a routerLink="/inicio" class="hover:text-gray-300 bg-transparent hover:bg-transparent px-2 py-1 rounded hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)]">Inicio</a> -->
+      <!-- <a routerLink="/servicios" class="hover:text-gray-300 bg-transparent hover:bg-transparent px-2 py-1 rounded hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)] ">Servicios</a>
+      <a routerLink="/contacto" class="hover:text-gray-300 bg-transparent hover:bg-transparent px-2 py-1 rounded hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)]">Contacto</a> -->
+    </div>
+    <div class="md:hidden">
+      <button (click)="toggleMenu()" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <div *ngIf="menuOpen" class="text-center items-center md:hidden px-6 py-4">
+    <a routerLink="/inicio" class="block py-2 hover:text-gray-300">Inicio</a>
+    <!-- <a routerLink="/contacto" class="block py-2 hover:text-gray-300">Servicios</a>
+    <a routerLink="/servicios" class="block py-2 hover:text-gray-300">Contacto</a> -->
+  </div>
+ 
+
+ 
+  </div>
