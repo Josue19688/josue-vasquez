@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  --card-border-radius: 1.5rem;
+}
 
 html {
     font-family: system-ui, sans-serif;
